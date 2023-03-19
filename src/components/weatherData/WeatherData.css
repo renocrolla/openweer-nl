@@ -1,0 +1,23 @@
+.weather-data-container {
+    width: 250px;
+    margin-top: 100px;
+    padding: 20px 30px 60px 30px;
+    font-size: 16px;
+    background: linear-gradient(180deg, #C6EAFF 45%, #FFFFFF 45%);
+    border-radius: 12px;
+    box-shadow: 1px 1px 10px #606060;
+}
+
+.weather-detail-divider {
+    margin-top: 30px;
+}
+
+.weather-icon {
+    width: 60px;
+}
+
+.error {
+    margin-top: 30px;
+    color: red;
+    font-size: 14px;
+}

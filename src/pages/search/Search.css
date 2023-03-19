@@ -1,0 +1,12 @@
+#multi-search-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}

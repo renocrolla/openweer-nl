@@ -1,0 +1,10 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-text {
+    padding-bottom: 20px;
+    font-size: 20px;
+}

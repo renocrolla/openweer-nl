@@ -1,0 +1,12 @@
+hr {
+    border-top: 2px solid #606060;
+}
+
+.faq h1 {
+    color: #606060;
+}
+
+.faq p {
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
