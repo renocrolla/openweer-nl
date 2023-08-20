@@ -14,7 +14,7 @@ function ContactForm() {
 
   return (
     <section>
-      {sendForm&& <p className="succes">Bericht succesvol verstuurd!✔️</p>}
+      {sendForm && <p className="succes">Bericht succesvol verstuurd!✔️</p>}
       <form id="contactform" onSubmit={handleSubmit(handleSubmitForm)}>
         {errors.name && <p>{errors.name.message}</p>}
         {errors.email && <p>{errors.email.message}</p>}
