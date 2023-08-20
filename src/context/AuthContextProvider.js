@@ -2,6 +2,7 @@ import React, {createContext, useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import jwtDecode from "jwt-decode";
 import axios from "axios";
+import isValidToken from "../helpers/isValidToken";
 
 export const AuthContext = createContext({});
 
@@ -50,21 +51,6 @@ function AuthContextProvider({ children }) {
       });
     }
   }, [])
-
-  function isValidToken() {
-    const accessToken = localStorage.getItem('jwt_token');
-
-    try {
-      const { exp } = jwtDecode(accessToken);
-
-      if (Date.now() >= exp * 1000) {
-        return false;
-      }
-    } catch (e) {
-      return false;
-    }
-    return true;
-  }
 
   function login(accessToken) {
     const decodedToken = jwtDecode(accessToken)
