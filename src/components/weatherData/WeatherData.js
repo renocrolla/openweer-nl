@@ -17,9 +17,11 @@ function WeatherData({ locationName }) {
                 const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location},nl&appid=${process.env.REACT_APP_OPENWEATHER_API_KEY}&lang=nl`, {signal: controller.signal});
                 setWeatherData(response.data);
             } catch (e) {
-                toggleError(true)
-                setWeatherData("");
-                console.error(e);
+                if (e.code !== "ERR_CANCELED") {
+                    toggleError(true)
+                    setWeatherData("");
+                    console.error(e);
+                }
             }
         }
 
