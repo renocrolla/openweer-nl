@@ -1,0 +1,23 @@
+.switch-container {
+    display: flex;
+    justify-content: right;
+    margin-top: -80px;
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin-bottom: 50px;
+    background: #50A6EB;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #50A6EB;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px #606060;
+}
+
+.weekly-title {
+    margin-right: 10px;
+    color: #FFFFFF;
+}
